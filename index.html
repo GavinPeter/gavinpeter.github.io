@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Swim cap on sale</title>
+  <link rel="stylesheet" href="assets/demo.css">
+
+  <script src="tracking-min.js"></script>
+  <script src="assets/color_camera_gui.js"></script>
+
+</head>
+<body>
+
+  <div class="demo-frame">
+    <div class="demo-container">
+
+<table>
+
+    <tbody>
+        <tr>
+            <th>
+                Effect(效果)
+            </th>
+            <td>
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+</td>
+        </tr>
+ </tbody>
+</table>
+
+      <video id="video" width="600" height="450" autoplay loop muted></video>
+      <canvas id="canvas" width="600" height="450"></canvas>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      var video = document.getElementById('video');
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+	var minions = new Image();
+	minions.src ="./assets/yelow-head.png";
+	
+      var tracker = new tracking.ColorTracker([ 'yellow']);
+
+      tracking.track('#video', tracker, { camera: true });
+
+      tracker.on('track', function(event) {
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+	
+	event.data.forEach(function(rect) {
+		
+		//check area enough
+		if (rect.width*rect.height > 1000&& document.getElementById("myonoffswitch").checked ){
+
+			//minions head show
+			if ( rect.color === 'yellow'){ 
+				context.drawImage( minions, rect.x, rect.y, rect.width,  2.4*rect.height );
+			}
+		
+		}
+	});		
+  
+      });
+    };
+  </script>
+
+</body>
+</html>
