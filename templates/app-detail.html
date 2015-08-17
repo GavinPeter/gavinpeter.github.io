@@ -1,0 +1,36 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<!--ion-view title="{{friend.name}}">
+  <ion-content has-header="true" padding="true">
+  </ion-content>
+</ion-view-->
+
+	 <div class="modal-header">
+		    <button  class="close" ng-click="cancel()" aria-hidden="true">&times;</button>
+		
+            <h3 class="modal-title">{{item.title}}</h3>
+		 <rating ng-model=item.rate max=5 readonly="true"  ></rating>| {{item.author}} 
+		<button class="btn btn-primary" ng-click="ok()" style="float:right">Download</button> 
+        </div>
+        <div ng-controller="CarouselDemoCtrl" class="modal-body">
+	<div class="row">
+	  <div class="col-xs-8 col-md-8">
+		<carousel interval="myInterval">
+	      <slide ng-repeat="slide in slides" active="slide.active">
+		<img ng-src="{{slide.pic}}" style="margin:auto;">
+		<!--div class="carousel-caption">
+		  <h4>Slide {{$index}}</h4>
+		  <p>{{slide.text}}</p>
+		</div-->
+	      </slide>
+	    </carousel>
+	</div>
+	  <div class="col-xs-4 col-md-4">{{item.description}}</div>
+	</div>
+
+        </div>
+
