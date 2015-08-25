@@ -28,7 +28,7 @@
      <li  ng-repeat="item in apps | filter:search:strict">
 	<a class="text-center">  <!--ng-click="open(item.id)"-->
 		<!--img src="http://placehold.it/150x150" /-->
-		 <img src="https://raw.githubusercontent.com/lagendre/{{item.name}}/master/res/icon.png" />
+		 <img src="https://raw.githubusercontent.com/lagendre/{{item.name}}/{{item.default_branch}}/res/icon.png" />
 <!--div class="row">  <div class="col-xs-6 col-md-offset-1"> </div>  <div class="col-xs-2" ></div></div-->
  <p>{{item.title}}<br />
     {{item.cat}}<br />

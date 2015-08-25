@@ -38,6 +38,7 @@ app.controller('HotAppsCtrl', function($scope, $rootScope,  $http,  $modal, $fil
 					details["title"]= g_Description.title;
 					details["name"] = data[i].name;
 					details["cat"] =  g_Description.cat;
+					details["default_branch"] = data[i].default_branch;
 						apps.push( details );
 				}
 		}
