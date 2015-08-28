@@ -26,7 +26,7 @@ app.controller('MainCtrl', function($rootScope, $scope, $state) {
 app.controller('HotAppsCtrl', function($scope, $rootScope,  $http,  $modal, $filter) {
 
 
-	$http.get("https://api.github.com/users/lagendre/repos")
+	$http.get("https://api.github.com/users/lagendre/repos?client_id=17232a47edba88b9ec88&client_Secret=08882a097e439f3211d0b700d33f6dbf8ce92af1")
 	  .success(function (data) {
 
 	  var apps=[];
