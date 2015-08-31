@@ -34,12 +34,17 @@ app.controller('HotAppsCtrl', function($scope, $rootScope,  $http,  $modal, $fil
 		for (var i=0; i<data.length; i++){
 			var details ={};
 				if (data[i].name.indexOf(".nw")!=-1){
-					var g_Description = JSON.parse(data[i].description);
-					details["title"]= g_Description.title;
-					details["name"] = data[i].name;
-					details["cat"] =  g_Description.cat;
-					details["default_branch"] = data[i].default_branch;
+    					try{
+	        				var g_Description = JSON.parse(data[i].description);
+						details["title"]= g_Description.title;
+						details["name"] = data[i].name;
+						details["cat"] =  g_Description.cat;
+						details["default_branch"] = data[i].default_branch;
 						apps.push( details );
+    					}catch(e){
+        					console.log(e); //error in the above string(in this case,yes)!
+    					}
+				
 				}
 		}
 	  
