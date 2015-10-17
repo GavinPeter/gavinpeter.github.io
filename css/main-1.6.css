@@ -167,7 +167,7 @@ body {
 }
 #introtext .amp {
     position: relative;
-    top: 19px;
+   // top: 19px;
     margin-left: -10px;
     font-size: 0.7em;
 }
@@ -238,7 +238,7 @@ margin-left: 5%;
 }
 .main header {
     float: left;
-    width: 80%;
+    width: 100%;//80%
 }
 
 /* ==========================================================================
@@ -366,7 +366,7 @@ section h2 {
     }
     #introtext .amp {
         position: relative;
-        top: 29px;
+     //   top: 29px;
         font-size: 0.9em;
         margin-left: -20px;
     }
@@ -418,7 +418,7 @@ section h2 {
     .main header {
         margin-top: 10%;
         float: left;
-        width: 40%;
+        width: 100%;//40%
         min-width: 320px;
     }
 
