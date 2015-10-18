@@ -399,7 +399,7 @@ section h2 {
         padding: 15px 1%;
         margin-bottom: 0;
         display:inline-block;
-        font-size: 60%;
+       // font-size: 60%;
         white-space: nowrap;
 
         -moz-font-smoothing: antialiased;
@@ -502,7 +502,7 @@ section h2 {
 
     nav a {
         padding: 15px 2%;
-        font-size: 90%;
+       // font-size: 90%;
     }
 }
 @media only screen and (min-width: 900px) {

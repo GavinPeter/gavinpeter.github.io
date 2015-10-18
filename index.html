@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>津舫❤嘉宏 婚禮</title>
+        <title>嘉宏❤津舫要結婚了</title>
         <meta name="description" content="Welcome to the wedding website for Sarah and Brad's Big Day!">
 
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -42,7 +42,7 @@
               },
               $ThumbnailNavigatorOptions: {
                 $Class: $JssorThumbnailNavigator$,
-                $Cols: 9,
+                $Cols: 10,
                 $SpacingX: 3,
                 $SpacingY: 3,
                 $Align: 260
@@ -53,10 +53,11 @@
             
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+           function ScaleSlider() {
+                //var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+		var refSize = $("section").width();
                 if (refSize) {
-                    refSize = Math.min(refSize, 600);
+                    refSize = Math.min(refSize, 800);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -196,9 +197,9 @@ http://scal.io -- check us out.
                     <nav id="nav">
                         <ul>
                             <li><a href="#brideandgroom">新娘 &amp; 新郎</a></li>
-                            <li><a href="#wedding">婚禮</a></li>
-                            <li><a href="#accomodations">交通</a></li>
-                            <li><a href="#registry">祝福</a></li>
+                            <li><a href="#wedding">婚紗照</a></li>
+                            <li><a href="#accomodations">婚禮交通</a></li>
+                            <li><a href="#registry">祝福登記</a></li>
                         </ul>
 
                     </nav>
@@ -212,13 +213,15 @@ http://scal.io -- check us out.
                         <div id="introtext">
                             <!--div class="head-sarah"></div-->
                             <span class="head-brad">
-				津舫&nbsp;
+				嘉宏&nbsp;
                                 <span class="amp">❤</span> 
-                                嘉宏
+                                津舫
                             </span>
-				 <div class="head-brad">要結婚了</div>
 				 
-                            <div class="date">1<sub>月</sub>23<sub>日</sub>, 2015</div>
+                            <div class="date">1<sub>月</sub>23<sub>日</sub>, 2016</div>
+				 <div style="font-size:150%">台中僑園飯店</div>				
+				
+				
                         </div>
 
                     </header>
@@ -227,7 +230,7 @@ http://scal.io -- check us out.
 
                     <section id="brideandgroom" class="clearfix">
 
-                        <h1>The Bride and Groom</h1>
+                        <h1>新娘＆新郎</h1>
                                 
                         <div class="column left">
 
@@ -261,14 +264,33 @@ http://scal.io -- check us out.
                         </div><!--end column-->
 
                        
-                             
-				    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+                             		   
+				
+                            <!--figure class="responsive-image proposal" data-media="img/onknee-small.jpg" data-media480="img/onknee-small.jpg" data-media768="img/onknee-medium.jpg" data-media1140="img/onknee-large.jpg" title="Brad Proposing To Sarah">
+                                <noscript>
+                                    <img src="img/onknee-large.jpg" alt="Brad Proposing To Sarah" />
+                                </noscript>
+                            </figure-->
+	 <!--div class="column full">
+                            <h2>THE ENGAGEMENT</h2>
+                            <p>Down in San Diego for a weekend to visit Bradley’s mom, the pair decided to spend the beautiful morning at Balboa Park. After returning to their hotel, Bradley asked Sarah to run up to their room for a bottle of wine that had been chilling. Bradley said he was going to ask concierge for a “wine opener” and that he’d meet her in the courtyard. As Sarah opened the door to the room, she “freaked out”, thinking she was in the wrong room. It was decorated with bouquets of her favorite flowers, decadent treats and champagne. Rose petals on the floor led her to the open balcony, and as she walked out she saw Bradley waiting for her down below, with a huge grin on his face. And like out of a fairy tale, Romeo asked Juliet to be his wife. She giggled, and said yes. Bradley had it all captured by a hidden, sniper-style photographer.</p>
+                                                        
+                        </div><!--end column-->
+
+                    </section>
+
+                    <section id="wedding" class="clearfix">
+			
+			 <h1>婚紗照</h1>
+			
+			<!--start slider show-->			
+			 <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 400px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
             <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 400px; overflow: hidden;">
             <div style="display: none;">
                 <img data-u="image" src="img/002.jpg" />
                 <img data-u="thumb" src="img/thumb-002.jpg" />
@@ -311,7 +333,7 @@ http://scal.io -- check us out.
             </div>
         </div>
         <!-- Thumbnail Navigator -->
-        <div u="thumbnavigator" class="jssort03" style="position:absolute;left:0px;bottom:0px;width:600px;height:60px;" data-autocenter="1">
+        <div u="thumbnavigator" class="jssort03" style="position:absolute;left:0px;bottom:0px;width:800px;height:60px;" data-autocenter="1">
             <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=30.0); opacity:0.3;"></div>
             <!-- Thumbnail Item Skin Begin -->
             <div u="slides" style="cursor: default;">
@@ -327,23 +349,13 @@ http://scal.io -- check us out.
         <!-- Arrow Navigator -->
         <span data-u="arrowleft" class="jssora02l" style="top:123px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora02r" style="top:123px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
-				
-                            <!--figure class="responsive-image proposal" data-media="img/onknee-small.jpg" data-media480="img/onknee-small.jpg" data-media768="img/onknee-medium.jpg" data-media1140="img/onknee-large.jpg" title="Brad Proposing To Sarah">
-                                <noscript>
-                                    <img src="img/onknee-large.jpg" alt="Brad Proposing To Sarah" />
-                                </noscript>
-                            </figure-->
-	 <!--div class="column full">
-                            <h2>THE ENGAGEMENT</h2>
-                            <p>Down in San Diego for a weekend to visit Bradley’s mom, the pair decided to spend the beautiful morning at Balboa Park. After returning to their hotel, Bradley asked Sarah to run up to their room for a bottle of wine that had been chilling. Bradley said he was going to ask concierge for a “wine opener” and that he’d meet her in the courtyard. As Sarah opened the door to the room, she “freaked out”, thinking she was in the wrong room. It was decorated with bouquets of her favorite flowers, decadent treats and champagne. Rose petals on the floor led her to the open balcony, and as she walked out she saw Bradley waiting for her down below, with a huge grin on his face. And like out of a fairy tale, Romeo asked Juliet to be his wife. She giggled, and said yes. Bradley had it all captured by a hidden, sniper-style photographer.</p>
-                                                        
-                        </div><!--end column-->
-
+	<!--end slider show-->
+                               
                     </section>
 
-                    <section id="wedding" class="clearfix">
+                    <section id="accomodations" class="clearfix">
 
-                        <h1>Wedding</h1>
+                        <h1>婚禮</h1>
 
                         <div class="column left">
                             <h2>CEREMONY</h2>
@@ -397,51 +409,8 @@ http://scal.io -- check us out.
                             </div>
 
                         </div><!--end column--> 
-                        <div class="column right bp">
 
-                            <h2>Groomsmen</h2> 
-                            <div class="column left">
-                                <p>
-                                Coming Soon!<br />
-                                </p>
-                            </div>
-                            <div class="column right">
-                                <p>
-                                </p>
-                            </div>
 
-                        </div><!--end column-->           
-                    </section>
-
-                    <section id="accomodations" class="clearfix">
-
-                        <h1>Accomodations</h1>
-
-                        <div class="column left">
-
-                            <h2>HOTELS</h2>
-                            <p>
-                                (At the venue) <br />
-                                The Inn at Rancho Santa Fe <br />
-                                5951 Linea Del Cielo <br />
-                                Rancho Santa Fe, CA 92067 <br />
-                                <a href="tel:1-858-756-1131">(858) 756-1131</a> <br />
-                                $279 <br /> 
-                                - <br />
-                                Morgan Run Resort &amp; Club (1.9 miles away) <br />
-                                5690 Cancha De Golf <br />
-                                Rancho Santa Fe, CA 92091 <br />
-                                <a href="tel:1-866-599-6674">(866) 599-6674</a> <br />
-                                $90 <br />
-                                - <br />
-                                (Closer to the beach) <br />
-                                Courtyard San Diego Solana Beach/Del Mar (4.5 miles away) <br />
-                                717 S Hwy 101 <br />
-                                Solana Beach, CA <br />
-                                <a href="tel:1-858-792-8200">(858) 792-8200</a> <br />
-                                $109 <br />
-                            </p>
-                        </div><!--end column-->
 
                         <div class="column right">
                             <h2>DIRECTIONS</h2>
