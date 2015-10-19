@@ -105,7 +105,7 @@ function initMap() {
         mapOptions);
  
     //設定地圖標記提示框中的html內容
-    var contentString ='<div style="width:100px;color:black;">嘉宏❤津舫囍宴<br />台中僑園飯店<br />民國105年1月23日, 中午12:30</div>'; 
+    var contentString ='<div style="width:100px;color:black;">嘉宏❤津舫婚禮<br />台中僑園飯店<br />民國105年1月23日, 中午12:30</div>'; 
  	
     var infowindow = new google.maps.InfoWindow({
         content: contentString //提示框中的內容
@@ -115,7 +115,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         map: map,
         position: latlng,
-		title: '嘉宏❤津舫囍宴'
+		title: '嘉宏❤津舫婚禮'
     });
      
     //檢視(open)提示框並指向map物件裡的marker標記點
