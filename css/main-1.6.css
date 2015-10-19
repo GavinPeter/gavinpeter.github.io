@@ -88,11 +88,11 @@ body {
     margin: 20px auto 20px auto;
 }
 
-#gmap iframe {
+#gmap {
     width: 93%;
     height: 200px;
 
-    border: 10px solid #090909;
+    border: 5px solid purple;
 
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
@@ -161,7 +161,7 @@ body {
 }
 
 #introtext .head-sarah {
-    font-family: "EdwardianScrAltITCTT", "Helmargin-left: 5%;vetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  //  font-family: "EdwardianScrAltITCTT", "Helmargin-left: 5%;vetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 5em;
     line-height: 100%;
 }
@@ -170,15 +170,16 @@ body {
    // top: 19px;
     margin-left: -10px;
     font-size: 0.7em;
+	color: red;
 }
 #introtext .head-brad {
-    font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  //  font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2em;
     line-height: 100%;
 }
 #introtext .date {
     margin-top: 10px;
-    font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ //   font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
 }
 
@@ -191,7 +192,7 @@ nav {
 }
 
 nav ul {
-    font-family:"futura_ltbook",Arial,sans-serif;
+  //  font-family:"futura_ltbook",Arial,sans-serif;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -250,7 +251,7 @@ html {
 }
 
 body {
-    font-family: "futura_ltbook", "HelveticaNeueLTStdRegular","HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  //  font-family: "futura_ltbook", "HelveticaNeueLTStdRegular","HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: #fff;
     text-align: center;
 
@@ -304,7 +305,7 @@ section {
 
 section h1 {
 
-    font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   // font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2.6em;
 
 }
@@ -369,6 +370,7 @@ section h2 {
      //   top: 29px;
         font-size: 0.9em;
         margin-left: -20px;
+		color: red;
     }
     #introtext .head-brad {
         font-size: 3em;
@@ -437,7 +439,7 @@ section h2 {
         font-size: 1.1em;
     }
 
-    #gmap iframe {
+    #gmap {
         height: 400px;
     }
 
@@ -479,6 +481,7 @@ section h2 {
     #introtext .amp {
         top: 0;
         font-size: 1em;
+		color: red;
     }
     #introtext .head-brad {
         font-size: 4em;
@@ -555,6 +558,7 @@ section h2 {
     #introtext .amp {
         top: 0;
         font-size: 1.1em;
+		color: red;
     }
     #introtext .head-brad {
         font-size: 5em;
@@ -714,14 +718,14 @@ section h2 {
 /* =============================================================================
    FONTS
    ========================================================================== */
-
+/*
 @font-face {
     font-family: 'futura_ltbold';
     src: url('futuralt-bold-webfont.eot');
-    src: url('futuralt-bold-webfont.eot?#iefix') format('embedded-opentype'),  /* IE6-IE8 */
-         url('futuralt-bold-webfont.woff') format('woff'),  /* Modern Browsers */
-         url('futuralt-bold-webfont.ttf') format('truetype'),  /* Safari, Android, iOS */
-         url('futuralt-bold-webfont.svg#futura_ltbold') format('svg');  /* Legacy iOS */
+    src: url('futuralt-bold-webfont.eot?#iefix') format('embedded-opentype'),  //IE6-IE8
+         url('futuralt-bold-webfont.woff') format('woff'),  // Modern Browsers 
+         url('futuralt-bold-webfont.ttf') format('truetype'),  // Safari, Android, iOS 
+         url('futuralt-bold-webfont.svg#futura_ltbold') format('svg');  // Legacy iOS
     font-weight: normal;
     font-style: normal;
 }
@@ -802,7 +806,7 @@ section h2 {
         font-weight: normal;
         font-style: normal;
 }
-
+*/
 .responsive-image.proposal {
     text-align: center;
     margin: 60px auto 60px auto;
