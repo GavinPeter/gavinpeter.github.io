@@ -171,6 +171,7 @@ body {
     margin-left: -10px;
     font-size: 0.7em;
 	color: red;
+	width: 32px;
 }
 #introtext .head-brad {
   //  font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -371,6 +372,7 @@ section h2 {
         font-size: 0.9em;
         margin-left: -20px;
 		color: red;
+	width: 48px;
     }
     #introtext .head-brad {
         font-size: 3em;
@@ -482,6 +484,7 @@ section h2 {
         top: 0;
         font-size: 1em;
 		color: red;
+	width: 48px;
     }
     #introtext .head-brad {
         font-size: 4em;
@@ -559,6 +562,7 @@ section h2 {
         top: 0;
         font-size: 1.1em;
 		color: red;
+	width: 96px;
     }
     #introtext .head-brad {
         font-size: 5em;
