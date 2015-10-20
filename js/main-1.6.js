@@ -58,41 +58,20 @@ $(function() {
 			event.preventDefault();
 	});
 
-	
-	    var jssor_1_options = {
-              $AutoPlay: true,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $Cols: 10,
-                $SpacingX: 3,
-                $SpacingY: 3,
-                $Align: 260
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizes
-           function ScaleSlider() {
-                //var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-		var refSize = $("section").width();
-                if (refSize) {
-                    refSize = Math.min(refSize, 800);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
+$( '#example3' ).sliderPro({
+			width: 960,
+			height: 500,
+			fade: true,
+			arrows: true,
+			buttons: false,
+			fullScreen: true,
+			shuffle: true,
+			smallSize: 500,
+			mediumSize: 1000,
+			largeSize: 3000,
+			thumbnailArrows: true,
+			autoplay: false
+		});
 	
     //$('figure.responsive-image').picture();
 });
