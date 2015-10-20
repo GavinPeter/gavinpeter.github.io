@@ -79,6 +79,23 @@ body {
     margin: 0 5%;
 }
 
+/* =============================================================================
+   social link
+   ========================================================================== */
+
+
+ul.share-buttons{	
+	list-style: none ; 
+	padding: 0 ; 
+	float:right ; 
+}
+
+
+ul.share-buttons li{
+  display: inline ; 
+}
+
+
 
 /* =============================================================================
    GOOGLE MAPS
@@ -165,13 +182,12 @@ body {
     font-size: 5em;
     line-height: 100%;
 }
-#introtext .amp {
+#introtext .amp * {
     position: relative;
    // top: 19px;
     margin-left: -10px;
     font-size: 0.7em;
 	color: red;
-	width: 32px;
 }
 #introtext .head-brad {
   //  font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -366,13 +382,13 @@ section h2 {
     #introtext .head-sarah {
         font-size: 7em;
     }
-    #introtext .amp {
+    #introtext .amp * {
         position: relative;
      //   top: 29px;
         font-size: 0.9em;
         margin-left: -20px;
 		color: red;
-	width: 48px;
+
     }
     #introtext .head-brad {
         font-size: 3em;
@@ -480,11 +496,10 @@ section h2 {
     #introtext .head-sarah {
         font-size: 9em;
    }
-    #introtext .amp {
+    #introtext .amp *{
         top: 0;
         font-size: 1em;
 		color: red;
-	width: 48px;
     }
     #introtext .head-brad {
         font-size: 4em;
@@ -558,11 +573,10 @@ section h2 {
     #introtext .head-sarah {
         font-size: 11em;
     }
-    #introtext .amp {
+    #introtext .amp  *{
         top: 0;
         font-size: 1.1em;
 		color: red;
-	width: 96px;
     }
     #introtext .head-brad {
         font-size: 5em;
@@ -866,12 +880,12 @@ a.email {
 
     height: 80px;
     width: 80px;
-    background-color: black;
+    background-color: purple;
     margin-right: 10px;
     margin-bottom: 0;
     float: left;
 
-    border: 4px solid #090909;
+    border: 4px solid purple;
 
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
@@ -881,16 +895,18 @@ a.email {
 }
 
 
-     
-        /* jssor slider arrow navigator skin 02 css */
-        /*
+ /* =============================================================================
+     jssor slider arrow navigator skin 02 css 
+      
         .jssora02l                  (normal)
         .jssora02r                  (normal)
         .jssora02l:hover            (normal mouseover)
         .jssora02r:hover            (normal mouseover)
         .jssora02l.jssora02ldn      (mousedown)
-        .jssora02r.jssora02rdn      (mousedown)
-        */
+        .jssora02r.jssora02rdn      (mousedown)  
+   ========================================================================== */
+    
+       
         .jssora02l, .jssora02r {
             display: block;
             position: absolute;

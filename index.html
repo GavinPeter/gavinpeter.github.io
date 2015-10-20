@@ -27,62 +27,16 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	
-	<script src="js/main-1.6.js"></script>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+	
+		<script src="js/vendor/jquery.scrollTo-1.4.3.1-min.js"></script>
+		
+		<script src="js/vendor/waypoints.min.js"></script>
+		
+		<script src="js/vendor/jssor.slider-20.min.js"></script>
+	
+		<script src="js/main-1.6.js"></script>
 
-	<script src="js/jssor.slider-20.min.js"></script>
-
-
-	   <script>
-         jQuery(document).ready(function ($) {
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $Cols: 10,
-                $SpacingX: 3,
-                $SpacingY: 3,
-                $Align: 260
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizes
-           function ScaleSlider() {
-                //var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-		var refSize = $("section").width();
-                if (refSize) {
-                    refSize = Math.min(refSize, 800);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
-        });
-    </script>
-<style>
-ul.share-buttons{	
-  list-style: none ; 
-  padding: 0 ; 
-float:right ; 
-}
-
-
-ul.share-buttons li{
-  display: inline ; 
-}
-</style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -130,8 +84,7 @@ map key:AIzaSyD9-PjIqtsL4kq__P_EqWIkziVU6ayYNXo
                             <!--div class="head-sarah"></div-->
                             <span class="head-brad">
 				嘉宏&nbsp;
-				<a href="img/qr_love.png" target="_blank"> <img src="img/qr_love.png" class="amp" /></a> 
-                               <!--span class="amp">❤</span--> 
+                               <span class="amp"><a href="img/qr_love.png" target="_blank">❤</a> </span> 
                                 津舫
                             </span>
 				 
@@ -161,9 +114,9 @@ map key:AIzaSyD9-PjIqtsL4kq__P_EqWIkziVU6ayYNXo
 
                             <h2>新郎</h2>
                             <p>
-                                <img src="img/bradThumb.jpg" class="thumb" alt="Brad" />
-                                Born in Mission Viejo, California, Bradley spent half of his life living with his mother in San Diego and half with his wonderful Wisconsin family. Bradley grew up playing ice hockey while secretly learning how to build computers. Half jock, half nerd, he has cultivated these interests well into his adult life, that make him who he is today. After his graduation from the University of San Francisco with a degree in Information Systems, Bradley worked for Yahoo! for seven years, and continued to explore the tech startup scene in  San Francisco. With an entrepreneurial spirit and passion for technology, Bradley now runs his own software company, Scal.io, building hand-crafted mobile,  web, and desktop apps for tech companies in the Silicon Valley and beyond. Bradley is adding to his vows a lifetime IT guarantee to Sarah, that he will be readily available 24/7 to troubleshoot... anything &amp; everything technical.</p>
-
+                                <img src="img/peterThumb.jpg" class="thumb" alt="Brad" />
+                                出生在台中，喜歡玩電腦、游泳、騎腳踏車，但是電腦弄得很糟，自由式游的很爛，腳踏車很舊，很感謝一路相伴的女友津舫，容忍我的怪脾氣，還要謝謝家人及親朋好友的支持，是您們讓我們更完美。PS.這個網站模板由https://github.com/bmgdev/responsive-wedding  Bradley提供(MIT Licence)，小弟修改，希望大家會喜歡。
+								
                         </div><!--end column-->
 
           
@@ -183,44 +136,44 @@ map key:AIzaSyD9-PjIqtsL4kq__P_EqWIkziVU6ayYNXo
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 480px; overflow: hidden;">
             <div style="display: none;">
-                <img data-u="image" src="img/002.jpg" />
-                <img data-u="thumb" src="img/thumb-002.jpg" />
+                <img data-u="image" src="img/jssor/002.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-002.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/003.jpg" />
-                <img data-u="thumb" src="img/thumb-003.jpg" />
+                <img data-u="image" src="img/jssor/003.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-003.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/004.jpg" />
-                <img data-u="thumb" src="img/thumb-004.jpg" />
+                <img data-u="image" src="img/jssor/004.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-004.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/005.jpg" />
-                <img data-u="thumb" src="img/thumb-005.jpg" />
+                <img data-u="image" src="img/jssor/005.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-005.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/006.jpg" />
-                <img data-u="thumb" src="img/thumb-006.jpg" />
+                <img data-u="image" src="img/jssor/006.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-006.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/007.jpg" />
-                <img data-u="thumb" src="img/thumb-007.jpg" />
+                <img data-u="image" src="img/jssor/007.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-007.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/008.jpg" />
-                <img data-u="thumb" src="img/008.jpg" />
+                <img data-u="image" src="img/jssor/008.jpg" />
+                <img data-u="thumb" src="img/jssor/008.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/009.jpg" />
-                <img data-u="thumb" src="img/009.jpg" />
+                <img data-u="image" src="img/jssor/009.jpg" />
+                <img data-u="thumb" src="img/jssor/009.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/010.jpg" />
-                <img data-u="thumb" src="img/010.jpg" />
+                <img data-u="image" src="img/jssor/010.jpg" />
+                <img data-u="thumb" src="img/jssor/010.jpg" />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="img/011.jpg" />
-                <img data-u="thumb" src="img/thumb-011.jpg" />
+                <img data-u="image" src="img/jssor/011.jpg" />
+                <img data-u="thumb" src="img/jssor/thumb-011.jpg" />
             </div>
         </div>
         <!-- Thumbnail Navigator -->
@@ -254,7 +207,7 @@ map key:AIzaSyD9-PjIqtsL4kq__P_EqWIkziVU6ayYNXo
 								地點： <br />
                                 台中僑園飯店<br />
 				40756台中市西屯區惠中路一段111號
-				<a href="http://maps.apple.com/?daddr=台中市西屯區惠中路一段111號&dirflg=d"><img src="img/apple_map.png" width="32" /></a><br />
+				<a href="http://maps.apple.com/?daddr=台中市西屯區惠中路一段111號&dirflg=d"><img src="img/map.png" width="32" /></a><br />
 				電話： 04-2255-9999<a href="tel:04-2255-9999"><img src="img/phone.png" /></a><br /><br />
                                 良辰吉時： <br />
                                 民國105年, 1<sub>月</sub>23<sub>日</sub>,中午12:30 <br /> 
