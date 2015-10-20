@@ -870,7 +870,7 @@ div.bp .column p {
     opacity:0.4;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
-a[href^=tel] {
+a[href] {
     color: white;
     text-decoration: none;
     outline: none;

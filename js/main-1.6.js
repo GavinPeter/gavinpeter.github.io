@@ -65,15 +65,14 @@ $( '#example3' ).sliderPro({
 			arrows: true,
 			buttons: false,
 			fullScreen: true,
-			shuffle: true,
+			shuffle: false,
 			smallSize: 500,
 			mediumSize: 1000,
 			largeSize: 3000,
 			thumbnailArrows: true,
-			autoplay: false
+			autoplay: true
 		});
 	
-    //$('figure.responsive-image').picture();
 });
 
 //google map
@@ -90,7 +89,7 @@ function initMap() {
         mapOptions);
  
     //設定地圖標記提示框中的html內容
-    var contentString ='<div style="width:100px;color:black;">台中僑園飯店<br />105年1月23日<br />中午12:30</div>'; 
+    var contentString ='<div style="width:110px;color:black;">台中僑園飯店<br />105/1/23,12:30 pm</div>'; 
  	
     var infowindow = new google.maps.InfoWindow({
         content: contentString //提示框中的內容
