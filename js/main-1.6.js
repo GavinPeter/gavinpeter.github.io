@@ -93,7 +93,7 @@ function initMap() {
     var latlng = new google.maps.LatLng(24.160069,120.643771); 
     var mapOptions = {
         center: latlng, //目前地圖中央的位置(須放置LatLng物件)
-        zoom: 17, //地圖縮放程度
+        zoom: 16, //地圖縮放程度
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     //設定Google Map會檢視於哪個區塊中，如下為id=map_canvas的html標籤區塊
