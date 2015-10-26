@@ -65,7 +65,6 @@ $( '#example3' ).sliderPro({
 			arrows: true,
 			buttons: false,
 			fullScreen: true,
-			shuffle: false,
 			smallSize: 500,
 			mediumSize: 1000,
 			largeSize: 3000,
@@ -81,7 +80,7 @@ function initMap() {
     var latlng = new google.maps.LatLng(24.160069,120.643771); 
     var mapOptions = {
         center: latlng, //目前地圖中央的位置(須放置LatLng物件)
-        zoom: 15, //地圖縮放程度
+        zoom: 17, //地圖縮放程度
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     //設定Google Map會檢視於哪個區塊中，如下為id=map_canvas的html標籤區塊
@@ -89,7 +88,7 @@ function initMap() {
         mapOptions);
  
     //設定地圖標記提示框中的html內容
-    var contentString ='<div style="width:110px;color:black;">台中僑園飯店<br />105/1/23,12:30 pm</div>'; 
+    var contentString ='<div style="width:110px;color:black;">台中僑園飯店<br />105/1/23,12:00 pm</div>'; 
  	
     var infowindow = new google.maps.InfoWindow({
         content: contentString //提示框中的內容
@@ -100,6 +99,21 @@ function initMap() {
         map: map,
         position: latlng,
 		title: '嘉宏❤津舫婚禮'
+    });
+	
+	    //建立一個marker物件(地圖標記點)
+    var marker_p1 = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(24.159531, 120.643323),
+		icon: 'img/free-parking.png',
+		title: '免費停車場'
+    });
+	
+	var marker_p2 = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(24.160649, 120.644083),
+		icon: 'img/toll-parking.png',
+		title: '付費停車場'
     });
      
     //檢視(open)提示框並指向map物件裡的marker標記點
