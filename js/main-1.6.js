@@ -58,19 +58,32 @@ $(function() {
 			event.preventDefault();
 	});
 
-$( '#example3' ).sliderPro({
-			width: 960,
-			height: 500,
-			fade: true,
-			arrows: true,
-			buttons: false,
-			fullScreen: true,
-			smallSize: 500,
-			mediumSize: 1000,
-			largeSize: 3000,
-			thumbnailArrows: true,
-			autoplay: true
-		});
+		   // Load the classic theme
+    Galleria.loadTheme('js/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria', {
+
+    // configure
+    autoplay: true,
+    lightbox: true,
+    idleMode: true,
+	// extend theme
+    extend: function() {
+        var gallery = this; // "this" is the gallery instance
+
+        //fullscreen button
+        this.addElement('fscr');
+        this.appendChild('stage','fscr');
+        var fscr = this.$('fscr').click(function() {
+            	gallery.toggleFullscreen();
+		$(".galleria-fscr").toggleClass("minimize");
+        });
+
+        // this.addIdleState(this.get('fscr'), { opacity:0 });
+    }
+
+	});
 	
 });
 
