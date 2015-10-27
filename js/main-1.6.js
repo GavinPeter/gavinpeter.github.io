@@ -59,7 +59,7 @@ $(function() {
 	});
 
 		   // Load the classic theme
-    Galleria.loadTheme('js/galleria.classic.min.js');
+    Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.js');
 
     // Initialize Galleria
     Galleria.run('#galleria', {

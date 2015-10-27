@@ -188,7 +188,7 @@ ul.share-buttons > img{
 #introtext .amp * {
     position: relative;
    // top: 19px;
-    margin-left: -10px;
+    //margin-left: -10px;
     font-size: 0.7em;
 	color: red;
 }
@@ -899,7 +899,7 @@ a.email {
 
 
  /* =============================================================================
-    slider  
+   galleria slider  
       
    ========================================================================== */
 #galleria{height:360px;}
