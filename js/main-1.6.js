@@ -32,7 +32,7 @@ $(function() {
 	
 	sections.waypoint({
 		handler: function(event, direction) {
-		
+			
 			var active_section;
 			active_section = $(this);
 			if (direction === "up") active_section = active_section.prev();
@@ -43,7 +43,7 @@ $(function() {
 
 		},
 		offset: '25%'
-	})
+	});
 	
 	
 	navigation_links.click( function(event) {
@@ -59,29 +59,29 @@ $(function() {
 	});
 
 		   // Load the classic theme
-    Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.js');
+		Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.js');
 
-    // Initialize Galleria
-    Galleria.run('#galleria', {
+		// Initialize Galleria
+		Galleria.run('#galleria', {
 
-    // configure
-    autoplay: true,
-    lightbox: true,
-    idleMode: true,
-	// extend theme
-    extend: function() {
-        var gallery = this; // "this" is the gallery instance
+		// configure
+		autoplay: true,
+		lightbox: true,
+		idleMode: true,
+		// extend theme
+		extend: function() {
+			var gallery = this; // "this" is the gallery instance
 
-        //fullscreen button
-        this.addElement('fscr');
-        this.appendChild('stage','fscr');
-        var fscr = this.$('fscr').click(function() {
-            	gallery.toggleFullscreen();
-		$(".galleria-fscr").toggleClass("minimize");
-        });
+			//fullscreen button
+			this.addElement('fscr');
+			this.appendChild('stage','fscr');
+			var fscr = this.$('fscr').click(function() {
+					gallery.toggleFullscreen();
+			$(".galleria-fscr").toggleClass("minimize");
+			});
 
-        // this.addIdleState(this.get('fscr'), { opacity:0 });
-    }
+			// this.addIdleState(this.get('fscr'), { opacity:0 });
+		}
 
 	});
 	
