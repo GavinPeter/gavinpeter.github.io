@@ -181,7 +181,7 @@ ul.share-buttons > img{
 }
 
 #introtext .head-sarah {
-  //  font-family: "EdwardianScrAltITCTT", "Helmargin-left: 5%;vetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
     font-size: 5em;
     line-height: 100%;
 }
@@ -199,7 +199,6 @@ ul.share-buttons > img{
 }
 #introtext .date {
     margin-top: 10px;
- //   font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
 }
 
@@ -207,12 +206,60 @@ ul.share-buttons > img{
     MOBILE: Menu
    ============== */
 
+@media only screen and (max-width: 480px) {
+.header-container.sticky nav #menu-icon {
+
+		display:inline-block !important;
+
+	}
+
+.header-container.sticky nav #menu-icon .m-menu {
+
+		background: purple;
+		 width: 32px;
+	}
+
+.header-container.sticky {
+        position: fixed;
+        top: 15px;
+	background-color:rgba(0, 0, 0, 0);        
+
+        animation:thedrop 1s 1;
+        -moz-animation:thedrop 1s 1;
+        -webkit-animation:thedrop 1s 1;
+    }
+
+.header-container.sticky nav  {
+     	float: left;
+	
+    }
+
+.header-container.sticky nav ul {
+        	display: none;
+		position: absolute;	
+		background: rgba(255, 0, 222, 1);
+		left: 0px;
+		top: 32px;
+		width: 45%;
+    }
+
+
+.header-container.sticky nav li {
+     	  	text-align: center;
+		width: 100%;
+		margin-left: -2%;
+    }
+
+.header-container.sticky nav:hover ul {
+       display: block;
+    }
+}
+
 nav {
     z-index: 42;
 }
 
 nav ul {
-  //  font-family:"futura_ltbook",Arial,sans-serif;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -271,7 +318,6 @@ html {
 }
 
 body {
-  //  font-family: "futura_ltbook", "HelveticaNeueLTStdRegular","HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: #fff;
     text-align: center;
 
@@ -736,98 +782,6 @@ section h2 {
 
 
 
-/* =============================================================================
-   FONTS
-   ========================================================================== */
-/*
-@font-face {
-    font-family: 'futura_ltbold';
-    src: url('futuralt-bold-webfont.eot');
-    src: url('futuralt-bold-webfont.eot?#iefix') format('embedded-opentype'),  //IE6-IE8
-         url('futuralt-bold-webfont.woff') format('woff'),  // Modern Browsers 
-         url('futuralt-bold-webfont.ttf') format('truetype'),  // Safari, Android, iOS 
-         url('futuralt-bold-webfont.svg#futura_ltbold') format('svg');  // Legacy iOS
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_ltbook';
-    src: url('futuralt-book-webfont.eot');
-    src: url('futuralt-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('futuralt-book-webfont.woff') format('woff'),
-         url('futuralt-book-webfont.ttf') format('truetype'),
-         url('futuralt-book-webfont.svg#futura_ltbook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_ltregular';
-    src: url('futuralt-webfont.eot');
-    src: url('futuralt-webfont.eot?#iefix') format('embedded-opentype'),
-         url('futuralt-webfont.woff') format('woff'),
-         url('futuralt-webfont.ttf') format('truetype'),
-         url('futuralt-webfont.svg#futura_ltregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'alex_brushregular';
-    src: url('alexbrush-regular-otf-webfont.eot');
-    src: url('alexbrush-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
-         url('alexbrush-regular-otf-webfont.woff') format('woff'),
-         url('alexbrush-regular-otf-webfont.ttf') format('truetype'),
-         url('alexbrush-regular-otf-webfont.svg#alex_brushregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'great_vibesregular';
-    src: url('greatvibes-regular-webfont.eot');
-    src: url('greatvibes-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('greatvibes-regular-webfont.woff') format('woff'),
-         url('greatvibes-regular-webfont.ttf') format('truetype'),
-         url('greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'scriptina_proregular';
-    src: url('scriptina_pro-webfont.eot');
-    src: url('scriptina_pro-webfont.eot?#iefix') format('embedded-opentype'),
-         url('scriptina_pro-webfont.woff') format('woff'),
-         url('scriptina_pro-webfont.ttf') format('truetype'),
-         url('scriptina_pro-webfont.svg#scriptina_proregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-        font-family: 'EdwardianScrAltITCTT';
-        src: url('edwasai.eot');
-        src: url('edwasai.eot?#iefix') format('embedded-opentype'),
-                 url('edwasai.woff') format('woff'),
-                 url('edwasai.ttf') format('truetype'),
-                 url('edwasai.svg#edwasai') format('svg');
-        font-weight: normal;
-        font-style: normal;
-}
-
-@font-face {
-        font-family: 'EdwardianScrAltITCTTBold';
-        src: url('edwasaib.eot');
-        src: url('edwasaib.eot?#iefix') format('embedded-opentype'),
-                 url('edwasaib.woff') format('woff'),
-                 url('edwasaib.ttf') format('truetype'),
-                 url('edwasaib.svg#edwasaib') format('svg');
-        font-weight: normal;
-        font-style: normal;
-}
-*/
 .responsive-image.proposal {
     text-align: center;
     margin: 60px auto 60px auto;
@@ -905,9 +859,13 @@ a.email {
 #galleria{height:360px;}
 
 section#registry {
-	padding: 0 !important;
-	height: 0 !important;
+	padding: 0 ;
+	height: 0 ;
 }
 
+#menu-icon {
 
+		display: none;
+
+	}
 
