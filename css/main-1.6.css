@@ -216,7 +216,8 @@ ul.share-buttons > img{
 .header-container.sticky nav #menu-icon .m-menu {
 
 		background: purple;
-		 width: 32px;
+		 width: 48px;
+		font-size:200%;
 	}
 
 .header-container.sticky {
