@@ -85,6 +85,7 @@ $(function() {
 
 	});
 	
+
 });
 
 //google map

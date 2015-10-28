@@ -904,3 +904,10 @@ a.email {
    ========================================================================== */
 #galleria{height:360px;}
 
+section#registry {
+	padding: 0 !important;
+	height: 0 !important;
+}
+
+
+
