@@ -256,10 +256,10 @@ ul.share-buttons > img{
 		width: 100%;
 		margin-left: -5%;
     }
-
-.header-container.sticky nav:focus ul, 	
-.header-container.sticky nav:hover ul {
-       display: block !important;
+.header-container.sticky nav:hover ul,
+.header-container.sticky nav:focus ul 	
+ {
+       display: block;
     }
 	
 	section#registry {
