@@ -211,7 +211,7 @@ ul.share-buttons > img{
 
 		display:inline-block !important;
 		
-			background-color: purple;
+		background-color: purple;
 		 width: 40px;
 		font-size:200%;
 		font-family: "Times New Roman", Times, serif;
@@ -260,7 +260,7 @@ ul.share-buttons > img{
 .header-container.sticky nav:focus ul 	
  {
        display: block;
-    }
+ }
 	
 	section#registry {
 	margin-left:-5%;
