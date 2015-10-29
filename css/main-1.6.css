@@ -210,17 +210,22 @@ ul.share-buttons > img{
 .header-container.sticky nav #menu-icon {
 
 		display:inline-block !important;
+		
+			background-color: purple;
+		 width: 40px;
+		font-size:200%;
+		font-family: "Times New Roman", Times, serif;
 
 	}
 
-.header-container.sticky nav #menu-icon .m-menu {
+/*.header-container.sticky nav #menu-icon .m-menu {
 
 		background-color: purple;
 		 width: 40px;
 		font-size:200%;
 		font-family: "Times New Roman", Times, serif;
 	}
-
+*/
 .header-container.sticky {
         position: fixed;
         top: 15px;
