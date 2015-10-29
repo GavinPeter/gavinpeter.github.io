@@ -215,9 +215,10 @@ ul.share-buttons > img{
 
 .header-container.sticky nav #menu-icon .m-menu {
 
-		background: purple;
-		 width: 48px;
+		background-color: purple;
+		 width: 40px;
 		font-size:200%;
+		font-family: "Times New Roman", Times, serif;
 	}
 
 .header-container.sticky {
@@ -252,8 +253,13 @@ ul.share-buttons > img{
     }
 
 .header-container.sticky nav:hover ul {
-       display: block;
+       display: block !important;
     }
+	
+	section#registry {
+	margin-left:-5%;
+	height: 0 ;
+}
 }
 
 nav {
