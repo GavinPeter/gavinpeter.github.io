@@ -257,6 +257,7 @@ ul.share-buttons > img{
 		margin-left: -2%;
     }
 
+.header-container.sticky nav:focus ul, 	
 .header-container.sticky nav:hover ul {
        display: block !important;
     }
