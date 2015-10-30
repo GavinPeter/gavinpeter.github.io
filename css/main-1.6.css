@@ -423,7 +423,7 @@ section h2 {
     /** get the transparent bar on the bottom **/
     .header-container {
         position:absolute;
-        bottom:20px;
+      //  bottom:20px;
         width:100%;
         line-height:12px;
     }
