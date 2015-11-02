@@ -186,9 +186,8 @@ ul.share-buttons > img{
     line-height: 100%;
 }
 #introtext .amp * {
-	font-family: "Times New Roman", Times, serif;
    	position: relative;
-    	font-size: 1.1em;
+    	font-size: 1.6em;
 	color: red;
 }
 #introtext .head-brad {
@@ -557,7 +556,7 @@ section h2 {
    }
     #introtext .amp *{
         top: 0;
-        font-size: 1em;
+      //  font-size: 1em;
 		color: red;
     }
     #introtext .head-brad {
@@ -634,7 +633,7 @@ section h2 {
     }
     #introtext .amp  *{
         top: 0;
-        font-size: 1.1em;
+      //  font-size: 1.1em;
 		color: red;
     }
     #introtext .head-brad {
