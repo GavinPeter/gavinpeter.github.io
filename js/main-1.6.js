@@ -5,16 +5,16 @@ $(function() {
 	var nav_container = $(".header-container");
 	var nav = $("#nav");
 	
-	var top_spacing = 15;
+	//var top_spacing = 15;
 	var waypoint_offset = 50;
 
 	nav_container.waypoint({
-		handler: function( direction) {
+		handler: function(event, direction) {
 			
 			if (direction == 'down') {
 			
-				nav_container.css({ 'height':nav.outerHeight(), 'position':'', 'bottom':''  });
-				nav_container.stop().addClass("sticky").css({"top":top_spacing});//"top",-nav.outerHeight()//).animate({"top":top_spacing});
+				nav_container.css({ 'height':nav.outerHeight(), 'position':'fixed', 'bottom':''  });
+				nav_container.stop().addClass("sticky").css({"top":"15"});//"top",-nav.outerHeight()//).animate({"top":top_spacing});
 				
 			} else {
 				nav_container.css({ 'top':'', 'height':'' });
@@ -31,7 +31,7 @@ $(function() {
 	var navigation_links = $("#nav ul li a");
 	
 	sections.waypoint({
-		handler: function( direction) {
+		handler: function(event, direction) {
 			
 			var active_section;
 			active_section = $(this);
