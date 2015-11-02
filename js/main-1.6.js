@@ -14,7 +14,7 @@ $(function() {
 			if (direction == 'down') {
 			
 				nav_container.css({ 'height':nav.outerHeight(), 'position':'', 'bottom':''  });
-				nav_container.stop().addClass("sticky").css("top",-nav.outerHeight()).animate({"top":top_spacing});
+				nav_container.stop().addClass("sticky").css({"top":top_spacing});//"top",-nav.outerHeight()//).animate({"top":top_spacing});
 				
 			} else {
 				nav_container.css({ 'top':'', 'height':'' });

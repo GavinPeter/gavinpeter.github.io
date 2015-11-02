@@ -227,8 +227,8 @@ ul.share-buttons > img{
 */
 .header-container.sticky {
         position: fixed;
-        top: 20px;
-	background-color:rgba(0, 0, 0, 0);        
+        top: 15px;
+		background-color:rgba(0, 0, 0, 0);        
 
         animation:thedrop 1s 1;
         -moz-animation:thedrop 1s 1;
@@ -251,7 +251,7 @@ ul.share-buttons > img{
 
 
 .header-container.sticky nav li {
-     	  	text-align: center;
+     	text-align: center;
 		width: 100%;
 		margin-left: -5%;
     }
@@ -422,7 +422,7 @@ section h2 {
     /** get the transparent bar on the bottom **/
     .header-container {
         position:absolute;
-      //  bottom:20px;
+       bottom:20px;
         width:100%;
         line-height:12px;
     }
