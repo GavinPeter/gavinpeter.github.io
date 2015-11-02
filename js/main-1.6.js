@@ -18,7 +18,7 @@ $(function() {
 				
 			} else {
 				nav_container.css({ 'top':'', 'height':'' });
-				nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":nav.outerHeight()+waypoint_offset}).animate({"bottom":"20"});
+				nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":"20"});// "bottom":nav.outerHeight()+waypoint_offset});//.animate({"bottom":"20"});
 			}
 			
 		},
