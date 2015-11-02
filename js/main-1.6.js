@@ -4,36 +4,39 @@ $(function() {
 	var nua = navigator.userAgent.toLowerCase();
 var is_android_native = ((nua.indexOf('mozilla/5.0') > -1 && nua.indexOf('android ') > -1 && nua.indexOf('applewebkit') > -1) && !(nua.indexOf('chrome') > -1));
 
+	var navigation_links = $("#nav ul li a");
+
+	if (!is_android_native){
+
 	// Do our DOM lookups beforehand
-	var nav_container = $(".header-container");
 	var nav = $("#nav");
-	
+	var nav_container = $(".header-container");	
+
 	//var top_spacing = 15;
 	var waypoint_offset = 50;
 
-	nav_container.waypoint({
+	 nav_container.waypoint({
 		handler: function(event, direction) {
-			if (!is_android_native){
+			
 				if (direction == 'down') {
+			
+				nav_container.css({ 'height':nav.outerHeight(), 'position':'', 'bottom':''  });
+				nav_container.stop().addClass("sticky").css("top",-nav.outerHeight()).animate({"top":"15"});
 				
-					nav_container.css({ 'height':nav.outerHeight(), 'position':'fixed', 'bottom':''  });
-					nav_container.stop().addClass("sticky").css({"top":"15"});//"top",-nav.outerHeight()//).animate({"top":top_spacing});
-					
-				} else {
-					nav_container.css({ 'top':'', 'height':'' });
-					nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":"20"});// "bottom":nav.outerHeight()+waypoint_offset});//.animate({"bottom":"20"});
-				}
+			} else {
+				nav_container.css({ 'top':'', 'height':'' });
+				nav_container.stop().removeClass("sticky").css({'position':'absolute', 'bottom':nav.outerHeight()+waypoint_offset}).animate({'bottom':'20'});
 			}
+			
 		},
 		offset: function() {
 			return -nav.outerHeight()-waypoint_offset;
 		}
 	});
 	
-	var sections = $("section");
-	var navigation_links = $("#nav ul li a");
 	
-	sections.waypoint({
+	
+	$("section").waypoint({
 		handler: function(event, direction) {
 			
 			var active_section;
@@ -48,6 +51,7 @@ var is_android_native = ((nua.indexOf('mozilla/5.0') > -1 && nua.indexOf('androi
 		offset: '25%'
 	});
 	
+	}
 	
 	navigation_links.click( function(event) {
 
@@ -137,3 +141,4 @@ function initMap() {
     infowindow.open(map, marker);
 }
 
+function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px'; }
