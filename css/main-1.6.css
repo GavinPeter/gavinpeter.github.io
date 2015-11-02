@@ -210,7 +210,6 @@ ul.share-buttons > img{
 .header-container.sticky nav #menu-icon {
 
 		display:inline-block !important;
-		
 		background-color: purple;
 		 width: 40px;
 		font-size:200%;
@@ -228,7 +227,7 @@ ul.share-buttons > img{
 */
 .header-container.sticky {
         position: fixed;
-        top: 15px;
+        top: 20px;
 	background-color:rgba(0, 0, 0, 0);        
 
         animation:thedrop 1s 1;
