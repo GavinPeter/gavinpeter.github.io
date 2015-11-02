@@ -143,8 +143,8 @@ ul.share-buttons > img{
     position:absolute;
     bottom:20px;
     width: 100%;
-    background: black;
-    z-index: 10;
+   // background: black;
+    z-index: 52;
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(255, 0, 222);
     /* RGBa with 0.9 opacity */
