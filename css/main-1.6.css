@@ -186,10 +186,9 @@ ul.share-buttons > img{
     line-height: 100%;
 }
 #introtext .amp * {
-    position: relative;
-   // top: 19px;
-    //margin-left: -10px;
-    font-size: 1.1em;
+	font-family: "Times New Roman", Times, serif;
+   	position: relative;
+    	font-size: 1.1em;
 	color: red;
 }
 #introtext .head-brad {
