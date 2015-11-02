@@ -8,7 +8,8 @@ $(function() {
 	var top_spacing = 15;
 	var waypoint_offset = 50;
 
-	nav_container.waypoint({
+	//nav_container.waypoint({
+	 $(".header-container").waypoint({	
 		handler: function(event, direction) {
 			
 			if (direction == 'down') {
@@ -30,7 +31,8 @@ $(function() {
 	var sections = $("section");
 	var navigation_links = $("#nav ul li a");
 	
-	sections.waypoint({
+	//sections.waypoint({
+	$("section").waypoint({	
 		handler: function(event, direction) {
 			
 			var active_section;
