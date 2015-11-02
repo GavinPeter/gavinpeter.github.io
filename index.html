@@ -50,6 +50,25 @@
 
     </head>
     <body>
+	
+		<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '880616041985948',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	
         <!--[if lt IE 7]>
             <p class="chromeframe">您使用<strong>不支援</strong> 瀏覽器. Please <a href="http://browsehappy.com/">升級您的瀏覽器</a> or <a href="http://www.google.com/chromeframe/?redirect=true">啟動Google Chrome 框架</a> 來增進使用者體驗。</p>
         <![endif]-->
@@ -83,6 +102,12 @@
 
                 <div class="main wrapper clearfix">
 <!--share button-->
+<!--div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div-->
 <ul class="share-buttons">
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E5%A9%9A%E7%A6%AE.ml&t=%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E7%B5%90%E5%A9%9A"  target="_blank"><img src="img/flat_web_icon_set/color/Facebook.png" alt="Share on Facebook" height="32" width="32" /></a></li>
   <li><a href="https://plus.google.com/share?url=http%3A%2F%2F%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E5%A9%9A%E7%A6%AE.ml" target="_blank" ><img src="img/flat_web_icon_set/color/Google+.png" alt="Share on Google+" height="32" width="32" /></a></li>
