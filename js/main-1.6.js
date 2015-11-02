@@ -1,6 +1,9 @@
 
 $(function() {
 
+	var nua = navigator.userAgent.toLowerCase();
+var is_android_native = ((nua.indexOf('mozilla/5.0') > -1 && nua.indexOf('android ') > -1 && nua.indexOf('applewebkit') > -1) && !(nua.indexOf('chrome') > -1));
+
 	// Do our DOM lookups beforehand
 	var nav_container = $(".header-container");
 	var nav = $("#nav");
@@ -10,17 +13,17 @@ $(function() {
 
 	nav_container.waypoint({
 		handler: function(event, direction) {
-			
-			if (direction == 'down') {
-			
-				nav_container.css({ 'height':nav.outerHeight(), 'position':'fixed', 'bottom':''  });
-				nav_container.stop().addClass("sticky").css({"top":"15"});//"top",-nav.outerHeight()//).animate({"top":top_spacing});
+			if (!is_android_native){
+				if (direction == 'down') {
 				
-			} else {
-				nav_container.css({ 'top':'', 'height':'' });
-				nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":"20"});// "bottom":nav.outerHeight()+waypoint_offset});//.animate({"bottom":"20"});
+					nav_container.css({ 'height':nav.outerHeight(), 'position':'fixed', 'bottom':''  });
+					nav_container.stop().addClass("sticky").css({"top":"15"});//"top",-nav.outerHeight()//).animate({"top":top_spacing});
+					
+				} else {
+					nav_container.css({ 'top':'', 'height':'' });
+					nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":"20"});// "bottom":nav.outerHeight()+waypoint_offset});//.animate({"bottom":"20"});
+				}
 			}
-			
 		},
 		offset: function() {
 			return -nav.outerHeight()-waypoint_offset;
