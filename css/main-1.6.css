@@ -187,7 +187,7 @@ ul.share-buttons > img{
 }
 #introtext .amp * {
    	position: relative;
-    	font-size: 1.5em;
+    	font-size: 1.2em;
 	color: red;
 }
 #introtext .head-brad {
@@ -435,7 +435,7 @@ section h2 {
     #introtext .amp * {
         position: relative;
      //   top: 29px;
-      //  font-size: 1.5em;
+       font-size: 1.5em;
      //   margin-left: -20px;
 		color: red;
 
