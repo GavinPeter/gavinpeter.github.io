@@ -187,7 +187,7 @@ ul.share-buttons > img{
 }
 #introtext .amp * {
    	position: relative;
-    	font-size: 1.6em;
+    	font-size: 1.5em;
 	color: red;
 }
 #introtext .head-brad {
@@ -209,20 +209,11 @@ ul.share-buttons > img{
 
 		display:inline-block !important;
 		background-color: purple;
-		 width: 40px;
+		line-height:32px;
+		 width: 32px;
 		font-size:200%;
-		font-family: "Times New Roman", Times, serif;
-
 	}
 
-/*.header-container.sticky nav #menu-icon .m-menu {
-
-		background-color: purple;
-		 width: 40px;
-		font-size:200%;
-		font-family: "Times New Roman", Times, serif;
-	}
-*/
 .header-container.sticky {
         position: fixed;
         top: 15px;
@@ -251,7 +242,7 @@ ul.share-buttons > img{
 .header-container.sticky nav li {
      	text-align: center;
 		width: 100%;
-		margin-left: -5%;
+		//margin-left: -5%;
     }
 .header-container.sticky nav:hover ul,
 .header-container.sticky nav:focus ul 	
@@ -260,7 +251,7 @@ ul.share-buttons > img{
  }
 	
 	section#registry {
-	margin-left:-5%;
+	//margin-left:-5%;
 	height: 0 ;
 }
 }
@@ -284,8 +275,9 @@ nav a {
     font-weight: bold;
     color: white;
     background: transparent;
-    white-space: nowrap;margin-left: 5%;
+    white-space: nowrap;
     outline: none;
+	//margin-left: 5%;
 }
 
 nav li a:hover {
