@@ -870,3 +870,6 @@ section#registry {
 
 	}
 
+	 #introtext .loc *{
+		font-size: 150%;
+    }
