@@ -184,3 +184,13 @@ function initMap() {
     infowindow.open(map, marker);
 }
 
+function Rsvp() {
+    	var person = prompt("貴賓大名？", "姓名");
+
+ 	if (person != null) {
+   		window.open("/rsvp.nw/#"+person , "_blank");
+	}
+	else{
+		window.open("/rsvp.nw", "_blank");
+	}
+}
