@@ -135,8 +135,14 @@ var is_android_native = ((nua.indexOf('mozilla/5.0') > -1 && nua.indexOf('androi
 
 	});
 	
+    var date1 = new Date();
+    var date2 = new Date("1/23/2016");
+    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+    
+    $('.github-fork-ribbon a').text( '距離婚禮還有 ' +diffDays+ ' 天');
 
-});
+    });
 
 //google map
 function initMap() {
@@ -184,13 +190,13 @@ function initMap() {
     infowindow.open(map, marker);
 }
 
-function Rsvp() {
+function rsvp() {
     	var person = prompt("貴賓大名？", "姓名");
 
  	if (person != null) {
-   		window.open("/rsvp.nw/#"+person , "_blank");
+   		window.open("/rsvp/#"+person , "_blank");
 	}
 	else{
-		window.open("/rsvp.nw", "_blank");
+		window.open("/rsvp", "_blank");
 	}
 }
