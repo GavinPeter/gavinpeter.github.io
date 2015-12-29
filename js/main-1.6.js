@@ -191,6 +191,9 @@ function initMap() {
 }
 
 function rsvp() {
+    
+    event.preventDefault();
+    
     	var person = prompt("貴賓大名？", "姓名");
 
  	if (person != null) {
