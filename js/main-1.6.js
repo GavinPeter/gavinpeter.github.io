@@ -137,11 +137,15 @@ var is_android_native = ((nua.indexOf('mozilla/5.0') > -1 && nua.indexOf('androi
 	
     var date1 = new Date();
     var date2 = new Date("1/23/2016");
-    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+    var timeDiff = date2.getTime() - date1.getTime();
+        if ( timeDiff > 0 ){
+            var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
     
-    $('.github-fork-ribbon a').text( '距離婚禮還有 ' +diffDays+ ' 天');
-
+            $('.github-fork-ribbon a').text( '距離婚禮還有 ' +diffDays+ ' 天');
+        }
+        else{
+            $('.github-fork-ribbon a').text( '感謝親朋好友參加！！');
+        }
     });
 
 //google map
@@ -203,3 +207,20 @@ function rsvp() {
 		window.open("/rsvp", "_blank");
 	}
 }
+
+  function toggleMute(){
+      event.preventDefault();
+      
+      var audioPlayer = $('audio')[0];
+      
+		if(audioPlayer.muted == false){ 
+            audioPlayer.pause();
+			audioPlayer.muted = true;
+			$('#sound').attr('src', "./img/Sound-off.png"); 
+		}
+		else{ 
+			audioPlayer.muted = false;
+            audioPlayer.play();
+			$('#sound').attr('src', "./img/Sound-on.png"); 
+		}
+  }

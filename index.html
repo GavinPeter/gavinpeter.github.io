@@ -36,6 +36,14 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">您使用<strong>不支援</strong> 瀏覽器. Please <a href="http://browsehappy.com/">升級您的瀏覽器</a> or <a href="http://www.google.com/chromeframe/?redirect=true">啟動Google Chrome 框架</a> 來增進使用者體驗。</p>
         <![endif]-->
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=880616041985948";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         
        <ul class="cb-slideshow">
             <li><span>Image 01</span></li>
@@ -67,7 +75,7 @@
                             <li><a href="#photo">集婚照片</a></li>
                             <li><a href="#wedding">婚禮資訊</a></li>
                              <li><a href="/portrait/" target="_blank">婚紗照片</a></li>
-			                 <li><a href="#" onclick="rsvp()">線上喜帖</a></li>
+			                 <li><a href="#comment" >線上留言</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -76,6 +84,10 @@
             <div class="main-container">
 
 
+<audio controls muted loop style="display:none">
+    <source src="./important_decision.mp3" type="audio/mpeg"></source>
+</audio>
+                
                 <div class="main wrapper clearfix">
 
 <ul class="share-buttons">
@@ -83,6 +95,7 @@
   <li><a href="https://plus.google.com/share?url=http%3A%2F%2F%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E5%A9%9A%E7%A6%AE.ml" target="_blank" ><img src="img/flat_web_icon_set/color/Google+.png" alt="Share on Google+" height="32" width="32" /></a></li>
  <li><a href="http://line.naver.jp/R/msg/text/?%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E5%A9%9A%E7%A6%AE%7C105%E5%B9%B4%E5%85%83%E6%9C%8823%E6%97%A5%E4%B8%AD%E5%8D%8812%E9%BB%9E%7C%E5%8F%B0%E4%B8%AD%E5%83%91%E5%9C%92%E9%A3%AF%E5%BA%97%0Ahttp%3A%2F%2Fxn--qei540n0ycj9ag61cfgrtsn.ml" target="_blank"><img src="img/flat_web_icon_set/color/Line.png" alt="用LINE傳送" height="32" width="32" /></a></li>
   <li><a href="mailto:?subject=%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E5%A9%9A%E7%A6%AE%0A%0A&body=105%E5%B9%B4%E5%85%83%E6%9C%8823%E6%97%A5%E4%B8%AD%E5%8D%8812%E9%BB%9E%7C%E5%8F%B0%E4%B8%AD%E5%83%91%E5%9C%92%E9%A3%AF%E5%BA%97%0A:%20http%3A%2F%2F%E5%98%89%E5%AE%8F%E2%9D%A4%E6%B4%A5%E8%88%AB%E5%A9%9A%E7%A6%AE.ml" target="_blank"><img src="img/flat_web_icon_set/color/Email.png"  alt="Email" height="32" width="32" /></a></li>
+      <li><a href="#" onclick="toggleMute()"><img src="img/Sound-off.png"  id="sound" alt="sound" height="32" width="32" /></a></li>
 </ul>
 <!--end of share button-->
                     <header>
@@ -352,55 +365,71 @@
 								地點： <br />
                                 台中僑園飯店<br />
 				<a href="http://maps.apple.com/?daddr=台中市西屯區惠中路一段111號&dirflg=d" target="_blank">
-				<img src="img/map.png"  alt="導航" height="32" width="32" />
+				<img src="img/map.png"  alt="導航" height="32" width="32" title="導航到僑園" />
 				40756台中市西屯區惠中路一段111號</a><br />
 				
 				<a href="tel:04-2255-9999">
-				<img src="img/phone.png" alt="打電話" height="32" width="32" />04-2255-9999</a>
+				<img src="img/phone.png" alt="打電話" title="電洽僑園" height="32" width="32"  />
+                04-2255-9999</a>
 				<br /><br />
 
                                 良辰吉時： <br />
-                                民國105年元月23日中午12點 準時 <br /> 
-				加入行事曆
-				<a href="wedding.ics" target="_blank" download="wedding.ics"><img src="img/ics.png"   height="32" width="32" alt="加入iOS行事曆(ics) 民國105年元月23日中午12點"></a>
-				<a href="wedding.vcs" target="_blank" download="wedding.vcs"><img src="img/vcs.png" height="32" width="32" alt="加入Android行事曆(vcs) 民國105年元月23日中午12點"></a>
-				<a href="img/qr_event.png" title="加入行事曆 QRCdoe 民國105年元月23日中午12點" data-featherlight>vEvent</a>
+				<a href="wedding.ics" target="_blank" download="wedding.ics"><img src="img/ics.png" title="加入行事曆"  height="32" width="32" alt="加入行事曆(ics)"> 民國105年元月23日中午12點</a>
+				
                             </p>
                             
-<p>
-    呼叫新郎 <a href="tel:0911-714-628" 
-				onclick="javascript:$(this).text($(this).text().replace('***', '628'))"><img src="img/phone.png" alt="打電話"  height="32" width="32" />0911-714-***</a><br />
-   加入新郎 <a href="img/peter_line.jpg"  title="新郎Line"  data-featherlight onclick="javascript:$(this).text($(this).text().replace('***', 'gen'))"><img src="img/flat_web_icon_set/color/Line.png" alt="LINE" height="32" width="32" />ID:la***dre</a>
-</p>
+                            <p>
+                                <a href="tel:0911-714-628"  onclick="javascript:$(this).text($(this).text().replace('***', '628'))">
+                                <img src="img/phone.png" alt="打電話"  height="32" width="32" /> 呼叫新郎 0911-714-***</a><br />
+                               <a href="img/peter_line.jpg"  title="新郎Line"  data-featherlight onclick="javascript:$(this).text($(this).text().replace('***', 'gen'))">
+                                <img src="img/flat_web_icon_set/color/Line.png" alt="LINE" height="32" width="32" /> 加入新郎    
+                                   ID:la***dre</a>
+                            </p>
     
-<p>
-    呼叫新娘 <a href="tel:0919-922-921" 
-				onclick="javascript:$(this).text($(this).text().replace('***', '922'))"><img src="img/phone.png" alt="打電話"  height="32" width="32" />0919-***-921</a><br />
-   加入新娘 <a href="#"  title="Line"   onclick="javascript:event.preventDefault();$(this).text($(this).text().replace('****', 'boat'))"><img src="img/flat_web_icon_set/color/Line.png" alt="LINE" height="32" width="32" />ID:fone****</a>
-</p>                            
+                            <p>
+                                <a href="tel:0919-922-921" 
+                                            onclick="javascript:$(this).text($(this).text().replace('***', '922'))">
+                                 <img src="img/phone.png" alt="打電話"  height="32" width="32" /> 呼叫新娘 0919-***-921</a><br />
+                                <a href="#"  title="Line"   onclick="javascript:event.preventDefault();$(this).text($(this).text().replace('****', 'boat'))">
+                                <img src="img/flat_web_icon_set/color/Line.png" alt="LINE" height="32" width="32" /> 加入新娘
+                                    ID:fone****</a>
+                            </p>
+                            
+                          
+                            
                         </div><!--end column--> 
                         <div class="column right">
                             <h2>交通</h2>
                             <p>
                             自行開車：<br/>
-路線1. 中山高 &rarr; 下中港交流道&nbsp;&rarr;&nbsp;行駛臺灣大道(往市區方向)&nbsp;&rarr;&nbsp;惠中路右轉 &rarr;&nbsp;僑園飯店<br />
-路線2. 中二高 &rarr;&nbsp;下快官交流道轉74號快速道路 &rarr;&nbsp;下市政路出口 &rarr;&nbsp;往市區方向行駛&nbsp;&rarr;&nbsp;惠中路左轉 &rarr;&nbsp;僑園飯店(備有免費停車場)<br />
-<br />
-台中市公車路線(統聯53、73、85)：<br />
-搭乘統聯53路、73路、85路公車往僑光科大&nbsp;&rarr;&nbsp;中央健保局下車 &rarr;&nbsp;右轉惠中路 &rarr;&nbsp;步行約3分鐘 &rarr;&nbsp;僑園飯店<br />
-<br />
-高鐵：<br />
-於高鐵台中站搭乘155號公車即可直達僑園飯店門口(惠中市政北三路口)
-                            </p>
-			<p>
-				 停車場：<br/>
+中山高 &rarr; 下中港交流道&nbsp;&rarr;&nbsp;行駛臺灣大道(往市區方向)&nbsp;&rarr;&nbsp;惠中路右轉 &rarr;&nbsp;僑園飯店<br />
 				飯店免費停車場<sub>(24°09'34.1"N, 120°38'36.0"E)</sub>:<br/><a href="http://maps.apple.com/?daddr=台中市西屯區惠中路一段117號&dirflg=d" target="_blank">
-				<img src="img/free-parking.png" height="32" width="32" alt="免費停車場" />飯店停車場可容納120部，鄰近aqua水相餐廳
+				<img src="img/free-parking.png" height="32" width="32" alt="免費停車場"  title="免費停車場"/> 飯店停車場可容納120部，鄰近aqua餐廳
 				</a><br />
 				市政公園付費停車場<sub>(24°09'38.3"N, 120°38'38.7"E)</sub>:<br/><a href="http://maps.apple.com/?daddr=台中市西屯區惠中路一段109號&dirflg=d" target="_blank">
-				<img src="img/toll-parking.png"  height="32" width="32" alt="付費停車場" />汽車：20元/小時，機車：20元/次
-				</a><br />
-			</p>
+				<img src="img/toll-parking.png"  height="32" width="32" alt="付費停車場"  title="付費停車場"/> 汽車：20元/小時，機車：20元/次
+				</a>                     
+                            </p>
+                            
+                            <p>
+<a href="http://citybus.taichung.gov.tw/iTravel/RealRoute.aspx" target="_blank"><img src="img/bus.png" title="公車動態"/> 台中市公車路線(統聯53、73、85)：</a><br />
+搭乘統聯53路、73路、85路公車往僑光科大&nbsp;&rarr;&nbsp;中央健保局下車 &rarr;&nbsp;右轉惠中路 &rarr;&nbsp;步行約3分鐘 &rarr;&nbsp;僑園飯店
+                            </p>
+                            
+                            <p>
+                            
+                            <a href="http://www.thsrc.com.tw/tw/TimeTable/SearchResult" target="_blank"><img src="img/hsr.png" title="高鐵資訊" /> 高鐵：</a><br />
+                            於高鐵台中站搭乘155號公車即可直達僑園飯店門口(惠中市政北三路口)
+                            </p>
+                            
+                              <p>
+                               <img src="img/nodrunkdrive.png" /> 酒後不開車<br />
+                                Uber申請新會員優惠$200：
+                                <a href="img/uberpromo.jpg"  title="uberPromocode" data-featherlight><b>PeterLydiaWedding</b></a><br />
+                                <a href="https://get.uber.com/invite/PeterLydiaWedding" target="_blank">
+                                    <img src="img/ubericon.png" title="註冊Uber新會員"/>
+                                點我加入</a>
+                            </p>
                         </div><!--end column--> 
 
                         <div class="clearfix"></div>
@@ -421,8 +450,11 @@
 
                     </section>
 
-
-
+                      <section id="comment" class="clearfix">
+                          <h1>線上留言</h1>
+                          <div class="fb-comments" data-href="http://xn--qei540n0ycj9ag61cfgrtsn.ml/" data-numposts="5"></div>
+                    </section>
+                     <div style="height: 100px"></div>
                 </div> <!-- #main -->
             </div> <!-- #main-container -->
         </div> <!-- #bg-container -->
